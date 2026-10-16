@@ -6,6 +6,7 @@ from pathlib import Path
 WA = "50762078779"
 EMAIL = "ventas@qcti.digital"
 IG = "https://instagram.com/qcti.digital"
+BEHOLD = "ZJGMYx6UoQaLjsUKSfDc"
 FORM = "https://docs.google.com/forms/d/e/1FAIpQLSe6XqBtSs-Q9NquqeVwQROhagyp8VaxZxzmzQJxmTKVOXbT4Q/viewform?embedded=true"
 
 ICON = {
@@ -163,7 +164,8 @@ def page(d):
 </div></section>
 <section id="tips" class="section ice"><div class="wrap">
 <div class="tips-head"><div><p class="eyebrow">{d['tips_eyebrow']}</p><h2>{d['tips_h']}</h2><p class="lead">{d['tips_lead']}</p></div></div>
-<!-- INSTAGRAM FEED: paste the Behold (or similar) embed code here, replacing the box below -->
+<!-- Instagram feed (Behold) -->
+<div class="ig-feed"><behold-widget feed-id="{BEHOLD}"></behold-widget></div>
 <div class="ig-box"><p>{d['tips_box']}</p><a class="btn btn-red" href="{IG}">{d['tips_btn']}</a></div>
 </div></section>
 <section id="trabajos" class="section"><div class="wrap">
@@ -181,6 +183,7 @@ def page(d):
 </main>
 <footer><div class="wrap"><div>© 2026 QCTI — {d['foot']}</div><a href="{IG}">Instagram @qcti.digital</a></div></footer>
 <a class="wa-float" href="{wa}" aria-label="WhatsApp">{WA_SVG}</a>
+<script type="module" src="https://w.behold.so/widget.js"></script>
 </body>
 </html>
 """
