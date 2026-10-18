@@ -6,6 +6,7 @@ from pathlib import Path
 WA = "50762078779"
 EMAIL = "ventas@qcti.digital"
 IG = "https://instagram.com/qcti.digital"
+FB = "https://www.facebook.com/profile.php?id=61595522370031"
 BEHOLD = "ZJGMYx6UoQaLjsUKSfDc"
 FORM = "https://docs.google.com/forms/d/e/1FAIpQLSe6XqBtSs-Q9NquqeVwQROhagyp8VaxZxzmzQJxmTKVOXbT4Q/viewform?embedded=true"
 
@@ -137,6 +138,8 @@ def page(d):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{r}assets/site.css">
+<!-- Metricool tracking -->
+<script>function loadScript(a){{var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}}loadScript(function(){{beTracker.t({{hash:"395db143343a4feb9411575e496ec70f"}})}});</script>
 </head>
 <body>
 <header><div class="wrap bar">
@@ -176,12 +179,12 @@ def page(d):
 <div class="contact-info">
 <p class="eyebrow">{d['c_eyebrow']}</p><h2>{d['c_h']}</h2><p class="lead" style="margin-bottom:30px">{d['c_lead']}</p>
 <a class="btn btn-red" href="{wa}">{WA_SVG}WhatsApp +507 6207-8779</a>
-<ul><li>{d['c_email']}: <a href="mailto:{EMAIL}">{EMAIL}</a></li><li>Instagram: <a href="{IG}">@qcti.digital</a></li><li>{d['c_area']}</li></ul>
+<ul><li>{d['c_email']}: <a href="mailto:{EMAIL}">{EMAIL}</a></li><li>Instagram: <a href="{IG}">@qcti.digital</a></li><li>Facebook: <a href="{FB}">QCTI</a></li><li>{d['c_area']}</li></ul>
 </div>
 <div class="form-box"><iframe src="{FORM}" title="{d['form_title']}" loading="lazy"></iframe></div>
 </div></section>
 </main>
-<footer><div class="wrap"><div>© 2026 QCTI — {d['foot']}</div><a href="{IG}">Instagram @qcti.digital</a></div></footer>
+<footer><div class="wrap"><div>© 2026 QCTI — {d['foot']}</div><span><a href="{IG}">Instagram @qcti.digital</a> · <a href="{FB}">Facebook</a></span></div></footer>
 <a class="wa-float" href="{wa}" aria-label="WhatsApp">{WA_SVG}</a>
 <script type="module" src="https://w.behold.so/widget.js"></script>
 </body>
