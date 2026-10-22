@@ -3,7 +3,7 @@ Edit the text in T below, then run: python3 build.py
 """
 from pathlib import Path
 
-WA = "50762078779"
+WA = "5073028779"
 EMAIL = "ventas@qcti.digital"
 IG = "https://instagram.com/qcti.digital"
 FB = "https://www.facebook.com/profile.php?id=61595522370031"
@@ -178,7 +178,7 @@ def page(d):
 <section id="contacto" class="section dark contact"><div class="wrap">
 <div class="contact-info">
 <p class="eyebrow">{d['c_eyebrow']}</p><h2>{d['c_h']}</h2><p class="lead" style="margin-bottom:30px">{d['c_lead']}</p>
-<a class="btn btn-red" href="{wa}">{WA_SVG}WhatsApp +507 6207-8779</a>
+<a class="btn btn-red" href="{wa}">{WA_SVG}WhatsApp +507 302-8779</a>
 <ul><li>{d['c_email']}: <a href="mailto:{EMAIL}">{EMAIL}</a></li><li>Instagram: <a href="{IG}">@qcti.digital</a></li><li>Facebook: <a href="{FB}">QCTI</a></li><li>{d['c_area']}</li></ul>
 </div>
 <div class="form-box"><iframe src="{FORM}" title="{d['form_title']}" loading="lazy"></iframe></div>
