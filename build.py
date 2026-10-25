@@ -6,7 +6,7 @@ from pathlib import Path
 WA = "5073028779"
 EMAIL = "ventas@qcti.digital"
 IG = "https://instagram.com/qcti.digital"
-FB = "https://www.facebook.com/profile.php?id=61595522370031"
+FB = "https://www.facebook.com/qcti.digital"
 BEHOLD = "ZJGMYx6UoQaLjsUKSfDc"
 FORM = "https://docs.google.com/forms/d/e/1FAIpQLSe6XqBtSs-Q9NquqeVwQROhagyp8VaxZxzmzQJxmTKVOXbT4Q/viewform?embedded=true"
 
